@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <!-- Estilos personalizados y paleta de colores -->
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -22,6 +23,27 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* PALETA DE COLORES */
+        :root {
+            --verde-principal: #3B4130;
+            --verde-oscuro: #2F3527;
+            --dorado-principal: #AFA56F;
+            --dorado-claro: #C0B98A;
+        }
+
+        /* Clases auxiliares para aplicar la paleta */
+        .bg-verde-principal { background-color: #3B4130; }
+        .bg-verde-oscuro { background-color: #2F3527; }
+        .bg-dorado-principal { background-color: #AFA56F; }
+        .bg-dorado-claro { background-color: #C0B98A; }
+
+        .text-verde-principal { color: #3B4130; }
+        .text-dorado-principal { color: #AFA56F; }
+        .text-dorado-claro { color: #C0B98A; }
+
+        .hover-bg-verde-oscuro:hover { background-color: #2F3527; }
+        .hover-bg-dorado-claro:hover { background-color: #C0B98A; }
     </style>
 </head>
 
@@ -39,7 +61,7 @@
         <!-- Capa Oscura (Overlay) -->
         <div class="absolute top-0 left-0 w-full h-full bg-black/70 z-10"></div>
 
-        <!-- Logo Centrado Arriba (Agrandado el triple: h-72 en móvil y h-96 en desktop) -->
+        <!-- Logo Centrado Arriba -->
         <div class="w-full flex justify-center z-20 pt-2">
             <a href="#">
                 <img src="logo.png" alt="Colussi AV" class="h-72 md:h-96 w-auto object-contain drop-shadow-2xl">
@@ -49,7 +71,7 @@
         <!-- Contenido Principal -->
         <div class="max-w-7xl mx-auto w-full text-white my-auto py-8 z-20">
 
-            <span class="bg-green-700 px-4 py-2 rounded-full text-sm font-semibold inline-block">
+            <span class="bg-verde-principal text-dorado-claro border border-[#AFA56F]/40 px-4 py-2 rounded-full text-sm font-semibold inline-block">
                 Expo Rural 2026
             </span>
 
@@ -65,7 +87,7 @@
             <div class="mt-10 flex flex-wrap gap-4">
 
                 <a href="#packs"
-                    class="bg-green-600 hover:bg-green-700 transition px-8 py-4 rounded-xl font-bold">
+                    class="bg-verde-principal hover-bg-verde-oscuro text-white transition px-8 py-4 rounded-xl font-bold border border-[#AFA56F]/30">
                     Ver paquetes
                 </a>
 
@@ -89,17 +111,17 @@
 
         <div class="max-w-7xl mx-auto">
 
-            <h2 class="text-4xl md:text-5xl font-bold text-center mb-14">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-14 text-verde-oscuro">
                 Elegí tu cobertura
             </h2>
 
             <div class="grid md:grid-cols-2 gap-8">
 
                 <!-- PACK DIARIO -->
-                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100 flex flex-col justify-between">
+                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-200 flex flex-col justify-between">
 
                     <div>
-                        <h3 class="text-3xl font-bold">
+                        <h3 class="text-3xl font-bold text-verde-oscuro">
                             Pack Diario
                         </h3>
 
@@ -107,7 +129,7 @@
                             Ideal para una sola jornada.
                         </p>
 
-                        <div class="text-5xl font-extrabold text-green-700 mt-8">
+                        <div class="text-5xl font-extrabold text-verde-principal mt-8">
                             $104.000
                         </div>
 
@@ -122,17 +144,17 @@
 
                     <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20reservar%20el%20Pack%20Diario%20para%20la%20Expo%20Rural"
                         target="_blank"
-                        class="block mt-10 text-center bg-green-600 text-white py-4 rounded-xl font-bold hover:bg-green-700 transition">
+                        class="block mt-10 text-center bg-verde-principal text-white py-4 rounded-xl font-bold hover-bg-verde-oscuro transition">
                         Reservar ahora
                     </a>
 
                 </div>
 
                 <!-- PACK FULL -->
-                <div class="bg-green-700 text-white rounded-3xl shadow-2xl p-10 relative flex flex-col justify-between">
+                <div class="bg-verde-principal text-white rounded-3xl shadow-2xl p-10 relative flex flex-col justify-between border border-[#AFA56F]/40">
 
                     <div>
-                        <span class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
+                        <span class="absolute top-5 right-5 bg-dorado-principal text-verde-oscuro px-4 py-2 rounded-full font-bold shadow-md">
                             10% OFF
                         </span>
 
@@ -140,11 +162,11 @@
                             Pack Full Expo (3 días)
                         </h3>
 
-                        <p class="mt-2 text-green-100">
+                        <p class="mt-2 text-gray-200">
                             Cobertura completa durante toda la exposición.
                         </p>
 
-                        <div class="text-5xl font-extrabold mt-8">
+                        <div class="text-5xl font-extrabold mt-8 text-white">
                             $280.800
                         </div>
 
@@ -153,13 +175,13 @@
                             <li>✅ 15 historias (5 por día)</li>
                             <li>✅ Hasta 100 fotos editadas</li>
                             <li>✅ Entrega digital</li>
-                            <li class="font-bold text-yellow-300">🎁 Material crudo incluido</li>
+                            <li class="font-bold text-dorado-claro">🎁 Material crudo incluido</li>
                         </ul>
                     </div>
 
                     <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20reservar%20el%20Pack%20Full%20Expo%20(3%20d%C3%ADas)"
                         target="_blank"
-                        class="block mt-10 text-center bg-white text-green-700 py-4 rounded-xl font-bold hover:bg-gray-100 transition">
+                        class="block mt-10 text-center bg-white text-verde-principal py-4 rounded-xl font-bold hover:bg-gray-100 transition">
                         Reservar ahora
                     </a>
 
@@ -176,30 +198,30 @@
 
         <div class="max-w-7xl mx-auto">
 
-            <h2 class="text-4xl md:text-5xl font-bold text-center mb-14">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-14 text-verde-oscuro">
                 ¿Por qué contratar cobertura?
             </h2>
 
             <div class="grid md:grid-cols-4 gap-8">
 
-                <div class="bg-gray-50 rounded-2xl p-8 text-center">
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
                     <div class="text-5xl mb-4">📸</div>
-                    <h3 class="text-xl font-bold">Contenido profesional</h3>
+                    <h3 class="text-xl font-bold text-verde-principal">Contenido profesional</h3>
                 </div>
 
-                <div class="bg-gray-50 rounded-2xl p-8 text-center">
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
                     <div class="text-5xl mb-4">🚜</div>
-                    <h3 class="text-xl font-bold">Mostrá tu marca</h3>
+                    <h3 class="text-xl font-bold text-verde-principal">Mostrá tu marca</h3>
                 </div>
 
-                <div class="bg-gray-50 rounded-2xl p-8 text-center">
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
                     <div class="text-5xl mb-4">📱</div>
-                    <h3 class="text-xl font-bold">Redes sociales</h3>
+                    <h3 class="text-xl font-bold text-verde-principal">Redes sociales</h3>
                 </div>
 
-                <div class="bg-gray-50 rounded-2xl p-8 text-center">
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
                     <div class="text-5xl mb-4">⚡</div>
-                    <h3 class="text-xl font-bold">Entrega en el día</h3>
+                    <h3 class="text-xl font-bold text-verde-principal">Entrega rápida</h3>
                 </div>
 
             </div>
@@ -209,7 +231,7 @@
     </section>
 
     <!-- CONTACTO -->
-    <section class="bg-gray-900 text-white py-24 px-6">
+    <section class="bg-verde-oscuro text-white py-24 px-6">
 
         <div class="max-w-4xl mx-auto text-center">
 
@@ -225,7 +247,7 @@
 
                 <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20la%20cobertura%20audiovisual"
                     target="_blank"
-                    class="bg-green-600 hover:bg-green-700 transition px-8 py-4 rounded-xl font-bold">
+                    class="bg-dorado-principal hover-bg-dorado-claro text-verde-oscuro transition px-8 py-4 rounded-xl font-bold">
                     WhatsApp
                 </a>
 
