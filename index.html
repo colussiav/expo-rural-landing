@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cobertura Audiovisual | Expo Rural 2026</title>
 
+    <!-- Meta tags para vista previa en WhatsApp / Redes (Open Graph) -->
+    <meta property="og:title" content="Cobertura Audiovisual | Expo Rural 2026">
+    <meta property="og:description" content="Mostrá tu empresa, maquinaria y productos con contenido profesional pensado para redes sociales.">
+    <!-- Reemplaza esta URL por el link directo a tu imagen de logo o banner -->
+    <meta property="og:image" content="RUTA_DE_TU_LOGO_O_PORTADA.jpg">
+    <meta property="og:type" content="website">
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -29,7 +34,6 @@
             background:
                 linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .75)),
                 url("https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1600&q=80");
-
             background-size: cover;
             background-position: center;
         }
@@ -38,9 +42,30 @@
 
 <body class="bg-gray-50 text-gray-900">
 
-    <!-- HERO -->
+    <!-- NAVBAR / ENCABEZADO CON LOGO -->
+    <header class="bg-black/80 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- LOGO: Podés usar una imagen <img> o texto estilizado -->
+            <a href="#" class="flex items-center gap-3">
+                <!-- Opción A: Imagen de Logo (Descomentar si tenés el archivo del logo) -->
+                <!-- <img src="logo.png" alt="Colussi AV" class="h-9 w-auto"> -->
+                
+                <!-- Opción B: Isologotipo en texto -->
+                <span class="text-white text-xl font-black tracking-wider">
+                    COLUSSI <span class="text-green-500 font-normal">AV</span>
+                </span>
+            </a>
 
-    <section class="hero min-h-screen flex items-center">
+            <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20la%20cobertura%20audiovisual" 
+               target="_blank"
+               class="bg-green-600 hover:bg-green-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+                Consultar
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO (Ajustado pt-28 para compensar el navbar fijo) -->
+    <section class="hero min-h-screen flex items-center pt-28 pb-16">
 
         <div class="max-w-7xl mx-auto px-6 text-white">
 
@@ -64,7 +89,7 @@
                     Ver paquetes
                 </a>
 
-                <a href="https://wa.me/5493482205343"
+                <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20la%20cobertura%20de%20la%20Expo%20Rural"
                     target="_blank"
                     class="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-black transition">
                     Contactar por WhatsApp
@@ -90,7 +115,7 @@
 
                 <!-- PACK DIARIO -->
 
-                <div class="bg-white rounded-3xl shadow-xl p-10">
+                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100">
 
                     <h3 class="text-3xl font-bold">
                         Pack Diario
@@ -113,7 +138,7 @@
 
                     </ul>
 
-                    <a href="https://wa.me/5493482205343"
+                    <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20reservar%20el%20Pack%20Diario%20para%20la%20Expo%20Rural"
                         target="_blank"
                         class="block mt-10 text-center bg-green-600 text-white py-4 rounded-xl font-bold hover:bg-green-700 transition">
 
@@ -153,7 +178,7 @@
 
                     </ul>
 
-                    <a href="https://wa.me/5493482205343"
+                    <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20reservar%20el%20Pack%20Full%20Expo%20(3%20d%C3%ADas)"
                         target="_blank"
                         class="block mt-10 text-center bg-white text-green-700 py-4 rounded-xl font-bold hover:bg-gray-100 transition">
 
@@ -182,43 +207,23 @@
             <div class="grid md:grid-cols-4 gap-8">
 
                 <div class="bg-gray-50 rounded-2xl p-8 text-center">
-
                     <div class="text-5xl mb-4">📸</div>
-
-                    <h3 class="text-xl font-bold">
-                        Contenido profesional
-                    </h3>
-
+                    <h3 class="text-xl font-bold">Contenido profesional</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-2xl p-8 text-center">
-
                     <div class="text-5xl mb-4">🚜</div>
-
-                    <h3 class="text-xl font-bold">
-                        Mostrá tu marca
-                    </h3>
-
+                    <h3 class="text-xl font-bold">Mostrá tu marca</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-2xl p-8 text-center">
-
                     <div class="text-5xl mb-4">📱</div>
-
-                    <h3 class="text-xl font-bold">
-                        Redes sociales
-                    </h3>
-
+                    <h3 class="text-xl font-bold">Redes sociales</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-2xl p-8 text-center">
-
                     <div class="text-5xl mb-4">⚡</div>
-
-                    <h3 class="text-xl font-bold">
-                        Entrega rápida
-                    </h3>
-
+                    <h3 class="text-xl font-bold">Entrega rápida</h3>
                 </div>
 
             </div>
@@ -243,20 +248,16 @@
 
             <div class="mt-10 flex justify-center gap-4 flex-wrap">
 
-                <a href="https://wa.me/5493482205343"
+                <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20la%20cobertura%20audiovisual"
                     target="_blank"
                     class="bg-green-600 hover:bg-green-700 transition px-8 py-4 rounded-xl font-bold">
-
                     WhatsApp
-
                 </a>
 
                 <a href="https://instagram.com/colussi.av"
                     target="_blank"
                     class="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-black transition">
-
                     Instagram
-
                 </a>
 
             </div>
