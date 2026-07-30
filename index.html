@@ -22,43 +22,34 @@
         html {
             scroll-behavior: smooth;
         }
-
-        .hero {
-            background:
-                linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .75)),
-                url("https://images.unsplash.com/photo-1500595046743-cd271d694d30?auto=format&fit=crop&w=1600&q=80");
-            background-size: cover;
-            background-position: center;
-        }
     </style>
 </head>
 
 <body class="bg-gray-50 text-gray-900">
 
-    <!-- NAVBAR / BARRA SUPERIOR CON LOGO -->
-    <header class="bg-black/85 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b border-white/10 py-3">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            
-            <!-- Tu Logo en grande -->
-            <a href="#" class="flex items-center">
-                <img src="logo.png" alt="Colussi AV" class="h-24 w-auto object-contain">
-            </a>
+    <!-- HERO CON VIDEO DE FONDO -->
+    <section class="relative min-h-screen flex flex-col justify-between py-12 px-6 overflow-hidden">
 
-            <!-- Botón directo a WhatsApp -->
-            <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20la%20cobertura%20audiovisual" 
-               target="_blank"
-               class="bg-green-600 hover:bg-green-700 text-white font-semibold px-5 py-3 rounded-xl transition">
-                Consultar
+        <!-- Video de Fondo -->
+        <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <source src="fondo.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+
+        <!-- Capa Oscura (Overlay) para asegurar que el texto sea legible -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black/70 z-10"></div>
+
+        <!-- Logo Centrado Arriba (z-20 para estar sobre el video) -->
+        <div class="w-full flex justify-center z-20">
+            <a href="#">
+                <img src="logo.png" alt="Colussi AV" class="h-16 md:h-20 w-auto object-contain">
             </a>
         </div>
-    </header>
 
-    <!-- HERO (pt-48 para dejar espacio suficiente al logo grande) -->
-    <section class="hero min-h-screen flex items-center pt-48 pb-20">
+        <!-- Contenido Principal -->
+        <div class="max-w-7xl mx-auto w-full text-white my-auto py-8 z-20">
 
-        <div class="max-w-7xl mx-auto px-6 text-white">
-
-            <span class="bg-green-700 px-4 py-2 rounded-full text-sm font-semibold">
+            <span class="bg-green-700 px-4 py-2 rounded-full text-sm font-semibold inline-block">
                 Expo Rural 2026
             </span>
 
@@ -80,13 +71,16 @@
 
                 <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20la%20cobertura%20de%20la%20Expo%20Rural"
                     target="_blank"
-                    class="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-black transition">
+                    class="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-black transition font-semibold">
                     Contactar por WhatsApp
                 </a>
 
             </div>
 
         </div>
+
+        <!-- Espaciador para balancear la sección -->
+        <div class="z-20"></div>
 
     </section>
 
@@ -102,26 +96,29 @@
             <div class="grid md:grid-cols-2 gap-8">
 
                 <!-- PACK DIARIO -->
-                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100">
+                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100 flex flex-col justify-between">
 
-                    <h3 class="text-3xl font-bold">
-                        Pack Diario
-                    </h3>
+                    <div>
+                        <h3 class="text-3xl font-bold">
+                            Pack Diario
+                        </h3>
 
-                    <p class="text-gray-500 mt-2">
-                        Ideal para una sola jornada.
-                    </p>
+                        <p class="text-gray-500 mt-2">
+                            Ideal para una sola jornada.
+                        </p>
 
-                    <div class="text-5xl font-extrabold text-green-700 mt-8">
-                        $104.000
+                        <div class="text-5xl font-extrabold text-green-700 mt-8">
+                            $104.000
+                        </div>
+
+                        <ul class="mt-8 space-y-4 text-lg">
+                            <li>✅ 1 reel editado</li>
+                            <li>✅ 3 historias editadas</li>
+                            <li>✅ Hasta 25 fotos editadas</li>
+                            <li>✅ Entrega digital</li>
+                            <li class="text-gray-400">❌ Material crudo no incluido</li>
+                        </ul>
                     </div>
-
-                    <ul class="mt-8 space-y-4 text-lg">
-                        <li>✅ 1 reel editado</li>
-                        <li>✅ 3 historias editadas</li>
-                        <li>✅ Hasta 25 fotos editadas</li>
-                        <li>✅ Entrega digital</li>
-                    </ul>
 
                     <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20reservar%20el%20Pack%20Diario%20para%20la%20Expo%20Rural"
                         target="_blank"
@@ -132,31 +129,33 @@
                 </div>
 
                 <!-- PACK FULL -->
-                <div class="bg-green-700 text-white rounded-3xl shadow-2xl p-10 relative">
+                <div class="bg-green-700 text-white rounded-3xl shadow-2xl p-10 relative flex flex-col justify-between">
 
-                    <span class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-                        10% OFF
-                    </span>
+                    <div>
+                        <span class="absolute top-5 right-5 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
+                            10% OFF
+                        </span>
 
-                    <h3 class="text-3xl font-bold">
-                        Pack Full Expo (3 días)
-                    </h3>
+                        <h3 class="text-3xl font-bold">
+                            Pack Full Expo (3 días)
+                        </h3>
 
-                    <p class="mt-2 text-green-100">
-                        Cobertura completa durante toda la exposición.
-                    </p>
+                        <p class="mt-2 text-green-100">
+                            Cobertura completa durante toda la exposición.
+                        </p>
 
-                    <div class="text-5xl font-extrabold mt-8">
-                        $280.800
+                        <div class="text-5xl font-extrabold mt-8">
+                            $280.800
+                        </div>
+
+                        <ul class="mt-8 space-y-4 text-lg">
+                            <li>✅ 3 reels (1 por día)</li>
+                            <li>✅ 15 historias (5 por día)</li>
+                            <li>✅ Hasta 100 fotos editadas</li>
+                            <li>✅ Entrega digital</li>
+                            <li class="font-bold text-yellow-300">🎁 Material crudo incluido</li>
+                        </ul>
                     </div>
-
-                    <ul class="mt-8 space-y-4 text-lg">
-                        <li>✅ 3 reels (1 por día)</li>
-                        <li>✅ 15 historias (5 por día)</li>
-                        <li>✅ Hasta 100 fotos editadas</li>
-                        <li>✅ Entrega digital</li>
-                        <li>🎁 Material crudo incluido</li>
-                    </ul>
 
                     <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20reservar%20el%20Pack%20Full%20Expo%20(3%20d%C3%ADas)"
                         target="_blank"
