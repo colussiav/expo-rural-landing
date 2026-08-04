@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COLUSSI Audiovisuales | Fotografía y Video</title>
+    <title>Cobertura Audiovisual | Expo Rural 2026</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,6 +24,7 @@
             scroll-behavior: smooth;
         }
 
+        /* PALETA DE COLORES */
         :root {
             --verde-principal: #3B4130;
             --verde-oscuro: #2F3527;
@@ -31,13 +32,13 @@
             --dorado-claro: #C0B98A;
         }
 
+        /* Clases auxiliares para aplicar la paleta */
         .bg-verde-principal { background-color: #3B4130; }
         .bg-verde-oscuro { background-color: #2F3527; }
         .bg-dorado-principal { background-color: #AFA56F; }
         .bg-dorado-claro { background-color: #C0B98A; }
 
         .text-verde-principal { color: #3B4130; }
-        .text-verde-oscuro { color: #2F3527; }
         .text-dorado-principal { color: #AFA56F; }
         .text-dorado-claro { color: #C0B98A; }
 
@@ -67,29 +68,30 @@
             </a>
         </div>
 
-        <!-- Contenido Principal (Estudio) -->
+        <!-- Contenido Principal -->
         <div class="max-w-7xl mx-auto w-full text-white my-auto py-8 z-20">
 
             <span class="bg-verde-principal text-dorado-claro border border-[#AFA56F]/40 px-4 py-2 rounded-full text-sm font-semibold inline-block">
-                Estudio Audiovisual
+                Expo Rural 2026
             </span>
 
             <h1 class="text-5xl md:text-7xl font-extrabold mt-6 leading-tight max-w-4xl">
-                Fotografía y producción audiovisual profesional
+                Cobertura audiovisual para expositores
             </h1>
 
             <p class="text-xl text-gray-200 mt-6 max-w-2xl">
-                Contenido estético de alto impacto para marcas, empresas y eventos.
+                Mostrá tu empresa, maquinaria y productos con contenido profesional
+                pensado para redes sociales.
             </p>
 
             <div class="mt-10 flex flex-wrap gap-4">
 
-                <a href="#servicios"
+                <a href="#packs"
                     class="bg-verde-principal hover-bg-verde-oscuro text-white transition px-8 py-4 rounded-xl font-bold border border-[#AFA56F]/30">
-                    Ver Servicios
+                    Ver paquetes
                 </a>
 
-                <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20sus%20servicios%20audiovisuales"
+                <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20la%20cobertura%20de%20la%20Expo%20Rural"
                     target="_blank"
                     class="border border-white px-8 py-4 rounded-xl hover:bg-white hover:text-black transition font-semibold">
                     Contactar por WhatsApp
@@ -104,54 +106,85 @@
 
     </section>
 
-    <!-- SERVICIOS DEL ESTUDIO (SIN PACKS NI PRECIOS) -->
-    <section id="servicios" class="py-24 px-6">
+    <!-- PACKS -->
+    <section id="packs" class="py-24 px-6">
 
         <div class="max-w-7xl mx-auto">
 
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-14 text-verde-oscuro">
-                Nuestros Servicios
+                Elegí tu cobertura
             </h2>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 gap-8">
 
-                <!-- Servicio 1 -->
-                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100 flex flex-col justify-between">
+                <!-- PACK DIARIO -->
+                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-200 flex flex-col justify-between">
+
                     <div>
-                        <div class="text-5xl mb-6">📸</div>
-                        <h3 class="text-3xl font-bold text-verde-oscuro mb-4">
-                            Fotografía Profesional
+                        <h3 class="text-3xl font-bold text-verde-oscuro">
+                            Pack Diario
                         </h3>
-                        <p class="text-gray-600 text-lg leading-relaxed">
-                            Registro publicitario, comercial, institucional y de producto con equipamiento de alta gama.
+
+                        <p class="text-gray-500 mt-2">
+                            Ideal para una sola jornada.
                         </p>
+
+                        <div class="text-5xl font-extrabold text-verde-principal mt-8">
+                            $104.000
+                        </div>
+
+                        <ul class="mt-8 space-y-4 text-lg">
+                            <li>✅ 1 reel editado</li>
+                            <li>✅ 3 historias editadas</li>
+                            <li>✅ Hasta 25 fotos editadas</li>
+                            <li>✅ Entrega digital</li>
+                            <li class="text-gray-400">❌ Material crudo no incluido</li>
+                        </ul>
                     </div>
+
+                    <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20reservar%20el%20Pack%20Diario%20para%20la%20Expo%20Rural"
+                        target="_blank"
+                        class="block mt-10 text-center bg-verde-principal text-white py-4 rounded-xl font-bold hover-bg-verde-oscuro transition">
+                        Reservar ahora
+                    </a>
+
                 </div>
 
-                <!-- Servicio 2 -->
-                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100 flex flex-col justify-between">
-                    <div>
-                        <div class="text-5xl mb-6">🎥</div>
-                        <h3 class="text-3xl font-bold text-verde-oscuro mb-4">
-                            Producción de Video
-                        </h3>
-                        <p class="text-gray-600 text-lg leading-relaxed">
-                            Videos institucionales, reels dinámicos para redes sociales y piezas de alto valor estético.
-                        </p>
-                    </div>
-                </div>
+                <!-- PACK FULL -->
+                <div class="bg-verde-principal text-white rounded-3xl shadow-2xl p-10 relative flex flex-col justify-between border border-[#AFA56F]/40">
 
-                <!-- Servicio 3 -->
-                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100 flex flex-col justify-between">
                     <div>
-                        <div class="text-5xl mb-6">🎪</div>
-                        <h3 class="text-3xl font-bold text-verde-oscuro mb-4">
-                            Cobertura de Eventos
+                        <span class="absolute top-5 right-5 bg-dorado-principal text-verde-oscuro px-4 py-2 rounded-full font-bold shadow-md">
+                            10% OFF
+                        </span>
+
+                        <h3 class="text-3xl font-bold">
+                            Pack Full Expo (3 días)
                         </h3>
-                        <p class="text-gray-600 text-lg leading-relaxed">
-                            Cobertura completa para exposiciones, conferencias y eventos corporativos con entregas rápidas.
+
+                        <p class="mt-2 text-gray-200">
+                            Cobertura completa durante toda la exposición.
                         </p>
+
+                        <div class="text-5xl font-extrabold mt-8 text-white">
+                            $280.800
+                        </div>
+
+                        <ul class="mt-8 space-y-4 text-lg">
+                            <li>✅ 3 reels (1 por día)</li>
+                            <li>✅ 15 historias (5 por día)</li>
+                            <li>✅ Hasta 100 fotos editadas</li>
+                            <li>✅ Entrega digital</li>
+                            <li class="font-bold text-dorado-claro">🎁 Material crudo incluido</li>
+                        </ul>
                     </div>
+
+                    <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20reservar%20el%20Pack%20Full%20Expo%20(3%20d%C3%ADas)"
+                        target="_blank"
+                        class="block mt-10 text-center bg-white text-verde-principal py-4 rounded-xl font-bold hover:bg-gray-100 transition">
+                        Reservar ahora
+                    </a>
+
                 </div>
 
             </div>
@@ -160,30 +193,35 @@
 
     </section>
 
-    <!-- SOBRE EL ESTUDIO -->
-    <section class="bg-white py-24 px-6 border-t border-gray-100">
+    <!-- BENEFICIOS -->
+    <section class="bg-white py-24 px-6">
 
         <div class="max-w-7xl mx-auto">
 
             <h2 class="text-4xl md:text-5xl font-bold text-center mb-14 text-verde-oscuro">
-                Trayectoria y Experiencia
+                ¿Por qué contratar cobertura?
             </h2>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-4 gap-8">
 
                 <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
-                    <div class="text-5xl font-extrabold text-verde-principal mb-2">+12</div>
-                    <h3 class="text-xl font-bold text-verde-oscuro">Años en Fotografía</h3>
+                    <div class="text-5xl mb-4">📸</div>
+                    <h3 class="text-xl font-bold text-verde-principal">Contenido profesional</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
-                    <div class="text-5xl font-extrabold text-verde-principal mb-2">+8</div>
-                    <h3 class="text-xl font-bold text-verde-oscuro">Años en Video</h3>
+                    <div class="text-5xl mb-4">🚜</div>
+                    <h3 class="text-xl font-bold text-verde-principal">Mostrá tu marca</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
-                    <div class="text-5xl font-extrabold text-verde-principal mb-2">⚡</div>
-                    <h3 class="text-xl font-bold text-verde-oscuro">Entrega Rápida</h3>
+                    <div class="text-5xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold text-verde-principal">Redes sociales</h3>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+                    <div class="text-5xl mb-4">⚡</div>
+                    <h3 class="text-xl font-bold text-verde-principal">Entrega rápida</h3>
                 </div>
 
             </div>
@@ -198,16 +236,16 @@
         <div class="max-w-4xl mx-auto text-center">
 
             <h2 class="text-4xl md:text-5xl font-bold">
-                Consultá por tu proyecto
+                Reservá tu cobertura
             </h2>
 
             <p class="text-gray-300 mt-4 text-lg">
-                Contanos qué necesitas y armamos una propuesta a la medida de tu marca.
+                Cupos limitados para la Expo Rural 2026.
             </p>
 
             <div class="mt-10 flex justify-center gap-4 flex-wrap">
 
-                <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20servicios%20audiovisuales"
+                <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20la%20cobertura%20audiovisual"
                     target="_blank"
                     class="bg-dorado-principal hover-bg-dorado-claro text-verde-oscuro transition px-8 py-4 rounded-xl font-bold">
                     WhatsApp
