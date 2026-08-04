@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COLUSSI Audiovisuales | Estudio de Fotografía y Video</title>
+    <title>COLUSSI Audiovisuales | Fotografía y Video</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -48,42 +48,8 @@
 
 <body class="bg-gray-50 text-gray-900">
 
-    <!-- NAVBAR FIJO CON MENÚ DESPLEGABLE -->
-    <header class="bg-black/90 backdrop-blur-md fixed top-0 left-0 w-full z-50 border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            
-            <!-- Logo que vuelve al Inicio -->
-            <a href="#inicio" class="flex items-center">
-                <img src="logo.png" alt="Colussi AV" class="h-12 md:h-16 w-auto object-contain">
-            </a>
-
-            <!-- Menú Desktop -->
-            <nav class="hidden md:flex items-center gap-8 text-white font-medium">
-                <a href="#inicio" class="hover:text-[#AFA56F] transition">Inicio</a>
-                <a href="#estudio" class="hover:text-[#AFA56F] transition">El Estudio</a>
-                <a href="#servicios" class="hover:text-[#AFA56F] transition">Servicios</a>
-                <a href="#contacto" class="bg-dorado-principal text-verde-oscuro px-5 py-2.5 rounded-xl font-bold hover-bg-dorado-claro transition">Contactar</a>
-            </nav>
-
-            <!-- Botón Menú Hamburguesa (Móvil) -->
-            <button id="menu-btn" class="md:hidden text-white focus:outline-none" aria-label="Abrir Menú">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Menú Desplegable Móvil -->
-        <div id="mobile-menu" class="hidden md:hidden bg-verde-oscuro border-b border-white/10 px-6 py-6 space-y-4 text-center">
-            <a href="#inicio" class="block text-white text-lg hover:text-[#AFA56F] transition" onclick="toggleMenu()">Inicio</a>
-            <a href="#estudio" class="block text-white text-lg hover:text-[#AFA56F] transition" onclick="toggleMenu()">El Estudio</a>
-            <a href="#servicios" class="block text-white text-lg hover:text-[#AFA56F] transition" onclick="toggleMenu()">Servicios</a>
-            <a href="#contacto" class="inline-block w-full bg-dorado-principal text-verde-oscuro py-3 rounded-xl font-bold" onclick="toggleMenu()">Contactar</a>
-        </div>
-    </header>
-
-    <!-- HERO / INICIO (CON VIDEO DE FONDO) -->
-    <section id="inicio" class="relative min-h-screen flex flex-col justify-center items-center pt-28 pb-16 px-6 overflow-hidden">
+    <!-- HERO CON VIDEO DE FONDO -->
+    <section class="relative min-h-screen flex flex-col justify-between py-10 px-6 overflow-hidden">
 
         <!-- Video de Fondo -->
         <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
@@ -91,25 +57,32 @@
             Tu navegador no soporta videos HTML5.
         </video>
 
-        <!-- Overlay Oscuro -->
-        <div class="absolute top-0 left-0 w-full h-full bg-black/75 z-10"></div>
+        <!-- Capa Oscura (Overlay) -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black/70 z-10"></div>
 
-        <!-- Contenido Hero -->
-        <div class="max-w-4xl mx-auto text-center text-white z-20 mt-10">
+        <!-- Logo Centrado Arriba -->
+        <div class="w-full flex justify-center z-20 pt-2">
+            <a href="#">
+                <img src="logo.png" alt="Colussi AV" class="h-72 md:h-96 w-auto object-contain drop-shadow-2xl">
+            </a>
+        </div>
 
-            <span class="bg-verde-principal text-dorado-claro border border-[#AFA56F]/40 px-5 py-2 rounded-full text-sm font-semibold inline-block mb-6">
-                COLUSSI Audiovisuales
+        <!-- Contenido Principal (Estudio) -->
+        <div class="max-w-7xl mx-auto w-full text-white my-auto py-8 z-20">
+
+            <span class="bg-verde-principal text-dorado-claro border border-[#AFA56F]/40 px-4 py-2 rounded-full text-sm font-semibold inline-block">
+                Estudio Audiovisual
             </span>
 
-            <h1 class="text-4xl md:text-7xl font-extrabold leading-tight tracking-tight">
-                Producción audiovisual profesional para marcas y empresas
+            <h1 class="text-5xl md:text-7xl font-extrabold mt-6 leading-tight max-w-4xl">
+                Fotografía y producción audiovisual profesional
             </h1>
 
-            <p class="text-lg md:text-2xl text-gray-200 mt-6 max-w-2xl mx-auto font-light">
-                Capturamos la esencia de tu negocio con fotografía y video de alto impacto visual.
+            <p class="text-xl text-gray-200 mt-6 max-w-2xl">
+                Contenido estético de alto impacto para marcas, empresas y eventos.
             </p>
 
-            <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <div class="mt-10 flex flex-wrap gap-4">
 
                 <a href="#servicios"
                     class="bg-verde-principal hover-bg-verde-oscuro text-white transition px-8 py-4 rounded-xl font-bold border border-[#AFA56F]/30">
@@ -126,86 +99,57 @@
 
         </div>
 
+        <!-- Espaciador para balancear la sección -->
+        <div class="z-20"></div>
+
     </section>
 
-    <!-- SECCIÓN: EL ESTUDIO / SOBRE NOSOTROS -->
-    <section id="estudio" class="py-24 px-6 bg-white">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-            
-            <div>
-                <span class="text-dorado-principal font-bold uppercase tracking-wider text-sm">Trayectoria & Experiencia</span>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-verde-oscuro mt-2">
-                    Creación visual con más de una década de historia
-                </h2>
-                <p class="text-gray-600 mt-6 text-lg leading-relaxed">
-                    En <strong>COLUSSI Audiovisuales</strong> combinamos 12 años de trayectoria en fotografía profesional y 8 años en producción de video para ofrecer soluciones estéticas de alto nivel.
-                </p>
-                <p class="text-gray-600 mt-4 text-lg leading-relaxed">
-                    Trabajamos junto a empresas, marcas e instituciones para potenciar su presencia visual a través de coberturas de eventos, contenido institucional y piezas dinámicas para redes sociales.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center">
-                    <span class="text-5xl font-black text-verde-principal block mb-2">+12</span>
-                    <span class="text-sm font-semibold text-gray-500 uppercase">Años en Fotografía</span>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center">
-                    <span class="text-5xl font-black text-verde-principal block mb-2">+8</span>
-                    <span class="text-sm font-semibold text-gray-500 uppercase">Años en Video</span>
-                </div>
-                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-center col-span-2">
-                    <span class="text-4xl font-bold text-verde-oscuro block mb-1">Estudio Propio</span>
-                    <span class="text-sm text-gray-500">Equipamiento y tecnología de última generación</span>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- SECCIÓN: SERVICIOS -->
-    <section id="servicios" class="py-24 px-6 bg-gray-50">
+    <!-- SERVICIOS DEL ESTUDIO (SIN PACKS NI PRECIOS) -->
+    <section id="servicios" class="py-24 px-6">
 
         <div class="max-w-7xl mx-auto">
 
-            <div class="text-center mb-16">
-                <span class="text-dorado-principal font-bold uppercase tracking-wider text-sm">Qué hacemos</span>
-                <h2 class="text-4xl md:text-5xl font-extrabold text-verde-oscuro mt-2">
-                    Nuestros Servicios
-                </h2>
-            </div>
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-14 text-verde-oscuro">
+                Nuestros Servicios
+            </h2>
 
             <div class="grid md:grid-cols-3 gap-8">
 
                 <!-- Servicio 1 -->
-                <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-100 flex flex-col justify-between hover:shadow-xl transition">
+                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100 flex flex-col justify-between">
                     <div>
-                        <div class="text-4xl mb-6">🎪</div>
-                        <h3 class="text-2xl font-bold text-verde-oscuro mb-3">Cobertura de Eventos y Expos</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Registro fotográfico y audiovisual completo para exposiciones rurales, congresos y eventos corporativos. Contenido pensado para publicar en tiempo real.
+                        <div class="text-5xl mb-6">📸</div>
+                        <h3 class="text-3xl font-bold text-verde-oscuro mb-4">
+                            Fotografía Profesional
+                        </h3>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Registro publicitario, comercial, institucional y de producto con equipamiento de alta gama.
                         </p>
                     </div>
                 </div>
 
                 <!-- Servicio 2 -->
-                <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-100 flex flex-col justify-between hover:shadow-xl transition">
+                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100 flex flex-col justify-between">
                     <div>
-                        <div class="text-4xl mb-6">📱</div>
-                        <h3 class="text-2xl font-bold text-verde-oscuro mb-3">Reels y Video Vertical</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Producción de video dinámico adaptado a las tendencias de Instagram y TikTok. Edición ágil, colorimetría profesional y sonido optimizado.
+                        <div class="text-5xl mb-6">🎥</div>
+                        <h3 class="text-3xl font-bold text-verde-oscuro mb-4">
+                            Producción de Video
+                        </h3>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Videos institucionales, reels dinámicos para redes sociales y piezas de alto valor estético.
                         </p>
                     </div>
                 </div>
 
                 <!-- Servicio 3 -->
-                <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-100 flex flex-col justify-between hover:shadow-xl transition">
+                <div class="bg-white rounded-3xl shadow-xl p-10 border border-gray-100 flex flex-col justify-between">
                     <div>
-                        <div class="text-4xl mb-6">📸</div>
-                        <h3 class="text-xl md:text-2xl font-bold text-verde-oscuro mb-3">Fotografía Publicitaria</h3>
-                        <p class="text-gray-600 leading-relaxed">
-                            Fotografía comercial de productos, maquinaria e instalaciones para catálogo, redes sociales y campañas publicitarias de gran formato.
+                        <div class="text-5xl mb-6">🎪</div>
+                        <h3 class="text-3xl font-bold text-verde-oscuro mb-4">
+                            Cobertura de Eventos
+                        </h3>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Cobertura completa para exposiciones, conferencias y eventos corporativos con entregas rápidas.
                         </p>
                     </div>
                 </div>
@@ -216,22 +160,54 @@
 
     </section>
 
-    <!-- SECCIÓN: CONTACTO Y FOOTER -->
-    <section id="contacto" class="bg-verde-oscuro text-white py-24 px-6 border-t border-white/10">
+    <!-- SOBRE EL ESTUDIO -->
+    <section class="bg-white py-24 px-6 border-t border-gray-100">
+
+        <div class="max-w-7xl mx-auto">
+
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-14 text-verde-oscuro">
+                Trayectoria y Experiencia
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+                    <div class="text-5xl font-extrabold text-verde-principal mb-2">+12</div>
+                    <h3 class="text-xl font-bold text-verde-oscuro">Años en Fotografía</h3>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+                    <div class="text-5xl font-extrabold text-verde-principal mb-2">+8</div>
+                    <h3 class="text-xl font-bold text-verde-oscuro">Años en Video</h3>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+                    <div class="text-5xl font-extrabold text-verde-principal mb-2">⚡</div>
+                    <h3 class="text-xl font-bold text-verde-oscuro">Entrega Rápida</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="bg-verde-oscuro text-white py-24 px-6">
 
         <div class="max-w-4xl mx-auto text-center">
 
             <h2 class="text-4xl md:text-5xl font-bold">
-                ¿Tenés un proyecto en mente?
+                Consultá por tu proyecto
             </h2>
 
             <p class="text-gray-300 mt-4 text-lg">
-                Contactate con nosotros para coordinar la cobertura o producción de tu marca.
+                Contanos qué necesitas y armamos una propuesta a la medida de tu marca.
             </p>
 
             <div class="mt-10 flex justify-center gap-4 flex-wrap">
 
-                <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20un%20proyecto%20audiovisual"
+                <a href="https://wa.me/5493482205343?text=Hola!%20Quiero%20consultar%20por%20servicios%20audiovisuales"
                     target="_blank"
                     class="bg-dorado-principal hover-bg-dorado-claro text-verde-oscuro transition px-8 py-4 rounded-xl font-bold">
                     WhatsApp
@@ -245,25 +221,9 @@
 
             </div>
 
-            <div class="mt-16 pt-8 border-t border-white/10 text-gray-400 text-sm">
-                © COLUSSI Audiovisuales. Todos los derechos reservados.
-            </div>
-
         </div>
 
     </section>
-
-    <!-- SCRIPT PARA EL MENÚ DESPLEGABLE EN MÓVILES -->
-    <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        function toggleMenu() {
-            mobileMenu.classList.toggle('hidden');
-        }
-
-        menuBtn.addEventListener('click', toggleMenu);
-    </script>
 
 </body>
 
